@@ -39,17 +39,8 @@ var budgetController = (function() {
 
 	// calculate the total expenses and incomes
 	var calculateTotal = function (type) {
-		// 
 		var sum = 0;
-
-		/* example: 
-			0
-			[200, 400, 100]
-			sum = 0 + 200;
-			sum = 200 + 400;
-			sum = 600 + 100 = 700
-		*/
-
+		
 		data.allItems[type].forEach(function (cur) {
 			sum += cur.value;
 		});
